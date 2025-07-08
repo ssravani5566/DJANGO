@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body bgcolor="red">
+    <img src="{% static 'image/logo.jfif' %}" height="300px" width="300px">
+    <p>
+        I am Sravani<br/>
+        I am from Baireddipalli.<br/>
+        My friends are:
+    </p>
+    <p>
+        <a href="{% url 'about' %}">About</a><br/>
+        <a href="{% url 'aliya' %}">aliya</a><br/>
+        <a href="{% url 'sravani' %}">sravani</a><br/>
+        <a href="{% url 'pavani' %}">pavani</a><br/>
+        <a href="{% url 'varsha' %}">varsha</a><br/>
+        
+        
+    </p>
+</body>
+</html>
