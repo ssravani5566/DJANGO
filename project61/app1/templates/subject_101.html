@@ -1,0 +1,6 @@
+from django.template import loader
+from django.http import HttpResponse
+
+def page_101(request):
+    template = loader.get_template('101.html') 
+    return HttpResponse(template.render())
